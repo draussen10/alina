@@ -1,0 +1,138 @@
+@font-face {
+	font-family:"Rimma";
+	src: url("RIMMA_SANS-BOLD.TTF") format("truetype");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Rimma', Arial, sans-serif;
+	font-weight: 600;
+	color: #ffffff;
+	background: #000;
+}
+
+.portfolio-main h2 {
+	line-height: 48px;
+	font-size: 40px;
+	background-position: center center;
+	border-color: transparent;
+	border-style: solid;
+	margin-top: 21px;
+	margin-left: 179.5px;
+	height: 90px;
+}
+
+.rec {
+	padding-top: 15px;
+}
+
+.container {
+	margin-left: 179.5px;;
+	margin-right: 179.5px;;
+}
+
+.el {
+	max-width: 560px;
+	margin-bottom: 40px;
+	height: 440px;
+	overflow: hidden;
+	position: relative;
+
+}
+
+.bgimg {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	transition: filter 0.2s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.el:hover .bgimg {
+	transform: scale(1.2);
+	filter: brightness(40%)
+}
+
+.border-inside {
+	position: absolute;
+	top: 7%;
+	left: 5%;
+	width: 90%;
+	height: 86%;
+	border-width: 1px;
+	border-radius: 30px;
+	background-position: center center;
+	border-color: #ffffff;
+	border-style: solid;
+}
+
+.el-pre_title {
+	position: absolute;
+	width: 85%;
+	top: 60%;
+	left: 9%;
+	font-size: 18px;
+	font-weight: 300;
+	transition: top 0.2s ease-in-out;
+}
+
+.el:hover .el-pre_title {
+	top: 15%;
+}
+
+.el-title {
+	position: absolute;
+	width: 85%;
+	top: 70%;
+	left: 9%;
+	font-size: 30px;
+	transition: top 0.2s ease-in-out;
+}
+
+.el:hover .el-title {
+	top: 23%;
+}
+
+.el-body {
+	position: absolute;
+	width: 85%;
+	top: 130%;
+	left: 9%;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.4;
+	transition: top 0.2s ease-in-out;
+}
+
+.el:hover .el-body {
+	top: 45%;
+}
+
+.arrows {
+	position: absolute;
+	top: 150%;
+	left: 9%;
+	transition: top 0.2s ease-in-out;
+	display: flex;
+}
+
+.arrow-btn {
+	width: 40px;
+	height: 40px;
+	border: none;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.el:hover .arrows {
+	top: 80%;
+}
