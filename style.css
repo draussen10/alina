@@ -1,3 +1,15 @@
+.t-container {
+	-webkit-font-smoothing: antialiased;
+	box-sizing: content-box;
+	margin: 0;
+	border: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width: 1200px;
+	padding: 0;
+}
+
 @font-face {
 	font-family:"Rimma";
 	src: url("RIMMA_SANS-BOLD.TTF") format("truetype");
@@ -32,8 +44,6 @@ body {
 }
 
 .container {
-	margin-left: 179.5px;
-	margin-right: 179.5px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -41,10 +51,10 @@ body {
 }
 
 .el {
-	width: 560px;
+	max-width: 560px;
+	flex-basis: 100%;
 	margin-bottom: 70px;
 	height: 440px;
-
 }
 
 .el-container {
@@ -62,7 +72,8 @@ body {
 	transition: filter 0.2s ease-in-out, transform 0.4s ease-in-out;
 }
 
-.el:hover .bgimg {
+.el-container:hover .bgimg,
+.bgimg.last {
 	transform: scale(1.2);
 	filter: brightness(40%)
 }
@@ -90,7 +101,7 @@ body {
 	transition: top 0.2s ease-in-out;
 }
 
-.el:hover .el-pre_title {
+.el-container:hover .el-pre_title {
 	top: 20%;
 }
 
@@ -99,27 +110,31 @@ body {
 	width: 85%;
 	top: 70%;
 	left: 9%;
-	font-size: 30px;
+	font-size: 28px;
 	transition: top 0.2s ease-in-out;
 }
 
-.el:hover .el-title {
+.el-container:hover .el-title {
 	top: 28%;
 }
 
 .el-body {
 	position: absolute;
-	width: 85%;
+	width: 80%;
 	top: 130%;
 	left: 9%;
-	font-size: 18px;
+	font-size: 15px;
 	font-weight: 300;
 	line-height: 1.4;
 	transition: top 0.2s ease-in-out;
 }
 
-.el:hover .el-body {
-	top: 50%;
+.el-container:hover .el-body {
+	top: 38%;
+}
+
+.el:nth-of-type(3) .el-container:hover .el-body {
+	top: 47%;
 }
 
 .arrows {
